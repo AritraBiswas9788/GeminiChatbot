@@ -92,8 +92,6 @@ class _TextWithImageState extends State<TextWithImage> with AutomaticKeepAliveCl
                 itemBuilder: (context,index)
                 {
                   return (history[index]['role'] == "User") ? (history[index]['image'] == null)?PromptText(prompt: history[index]['text']):PromptImageText(prompt: history[index]['text'],imageFile: history[index]['image']):botText(text: history[index]['text']);
-
-
                 }
             )
           ),
