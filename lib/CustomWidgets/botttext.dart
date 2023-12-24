@@ -26,9 +26,11 @@ class _botTextState extends State<botText> {
             width: 50.0,
           ),
           SizedBox(width:25.0),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
-            child: Text(widget.text),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
+              child: Text(widget.text),
+            ),
           )
         ],
       ),

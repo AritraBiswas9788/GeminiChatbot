@@ -16,14 +16,19 @@ class _PromptTextState extends State<PromptText> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.lightGreen[400]
+        color: Colors.lightGreen[300]
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(widget.prompt),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Text(widget.prompt),
+              ),
+            ),
             SizedBox(width: 25.0,),
             Image(
               image: AssetImage('assets/problem.png'),

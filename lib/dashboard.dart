@@ -39,7 +39,7 @@ class _DashBoardState extends State<DashBoard> {
               centerTitle: true,
               bottom: const TabBar(
                 labelColor: Colors.white,
-                indicatorColor: Colors.grey,
+                indicatorColor: Colors.white,
                 tabs: [
                   Tab(text: "Text Only"),
                   Tab(text: "Text & Image"),
@@ -55,6 +55,8 @@ class _DashBoardState extends State<DashBoard> {
                   ),
                 )
               ],
-            )));
+            )
+        )
+    );
   }
 }
